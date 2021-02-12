@@ -12,6 +12,7 @@
   --bgcolor:teal;
   --fontColor:#383737; 
   --primaryColor:#aaa;
+  --bestColor:#fbfbfb;
   --blackColor:#000;
   --grayColor:#333;
   --redColor:#f7564a;  
@@ -21,13 +22,24 @@
 html{
   font-size: 62.5%;
   /* font-family: "Poppins",sans-serif; */
-  /* font-family: "Roboto",sans-serif; */
-  font-family: "Montserrat",sans-serif;
+  font-family: "Roboto",sans-serif;
+  /* font-family: "Montserrat",sans-serif; */
 }
-
 body{
-  background-color: var(--lighColor) ;
-  color: #e9a942;
+  background-color: var(--bestColor);
 }
 
+.card{
+  border: 2px solid red;
+  width: 250px;
+  height: 250px;
+  display: inline-block;  
+}
+.card:hover{
+  transform: scale(1.05);
+}
+.card-image>img{
+  width: 200px;
+  height: 180px;
+}
 
