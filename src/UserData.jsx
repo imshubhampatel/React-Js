@@ -47,6 +47,8 @@ const userData = [
 
 
 },
+   
+   
     {
     id: 6,
     imgsrc:"https://wallpapercave.com/wp/wp8150260.jpg",
@@ -56,7 +58,7 @@ const userData = [
 
 
 },
-    {
+   {
     id: 7,
     imgsrc:"https://wallpapercave.com/wp/wp8436080.jpg",
     link:"https://www.netflix.com/in/title/80220679",
@@ -72,13 +74,16 @@ const userData = [
     series:"Half Girlfriend",
     title:"Netflix Movies"
 },
+ 
+ 
+ 
     {
     id: 9,
     imgsrc:"https://www.heavenofhorror.com/wp-content/uploads/2019/07/pihu-thriller-review-netflix.jpg",
     link:"https://www.netflix.com/in/title/81113927",
     series:"Pihu",
     title:"Netflix Movies"
-},
+}
 ]
 
 export default userData;

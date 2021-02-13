@@ -1,17 +1,25 @@
 import React from "react";
 import Card from "./Card";
-import userData from "./UserData";
+import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
 import "./index.css";
 
 
-function App(){
-    return(
+function App() {
+    return (
         <>
-        <h1>this is app heading</h1>
-        <Card />
+            <div className="navbar">
+                <Navbar />
+            </div>
+            <div className="sidebar">
+                <Sidebar />
+            </div>
+            <div className="container">
+                <Card />
+            </div>
         </>
     )
-    
+
 }
 
 

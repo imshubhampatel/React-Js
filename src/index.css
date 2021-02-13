@@ -21,25 +21,292 @@
 
 html{
   font-size: 62.5%;
-  /* font-family: "Poppins",sans-serif; */
-  font-family: "Roboto",sans-serif;
+  font-family: "Poppins",sans-serif;
+  /* font-family: "Roboto",sans-serif; */
   /* font-family: "Montserrat",sans-serif; */
 }
 body{
-  background-color: var(--bestColor);
+  background-color: var(--fbfbfb);
 }
 
 .card{
-  border: 2px solid red;
-  width: 250px;
-  height: 250px;
-  display: inline-block;  
+  width: 22.5rem;
+  height: 25rem;
+  display: inline-flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 7px 1px rgb(0 0 0 / 12%), 0px 0px 6px 1px rgb(0 0 0 / 22%);
+  margin: 1rem 1.4rem;
+  transition: all 0.3s ease-out;
+  border-radius: 4px;
+  position: relative;
 }
+
 .card:hover{
   transform: scale(1.05);
 }
+
 .card-image>img{
-  width: 200px;
-  height: 180px;
+
+  width: 100%;
+  height: 60%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 4px;
+  background: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0%);
 }
 
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  width: 95%;
+  position: absolute;
+  right: 0;
+  top: 10%;
+  background-color: #f9f9f9;
+  padding: 10px;
+  opacity: 1;
+  z-index: 1;
+  
+}
+.container::before{
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  position: fixed;
+  top: 11.9%;
+  left: 5%;
+  z-index: 99999;
+}
+
+button{
+  display: inline-block;
+  outline: none;
+  border: none;
+  width: 10rem;
+  height: 2rem;
+  background-color: teal;
+  border-radius: 2px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+.card-title{
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+.card-title>h2{
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  width: 25rem;
+  text-align: center;
+}
+/* styling navbar left side on top */
+.left{
+  width:90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+
+}
+
+.hemburger{
+  /* border: 2px solid pink; */
+  width: 30%;
+  display: flex;
+  flex-direction: wrap;
+  flex-wrap:nowrap;
+  justify-content:space-between;
+  align-items: center;
+}
+
+
+.line{
+  width: 2.5rem;
+  height: 0.3rem;
+  background-color: #333;
+  margin-bottom:0.3rem;
+}
+
+.search-bar{
+  width: 70%;
+  height: 30px;
+}
+.search-bar>input{
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  border: 1px solid #ddd;
+}
+
+.logo{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  margin:1rem;
+}
+.logo>img{
+  width: 3.2rem;
+  height: 2.8rem;
+}
+.logo div>span{
+  font-family: "Roboto",sans-serif;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 5px 5px 5px 0;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  z-index: 99999;
+  /* background:linear-gradient((255 255 255 / 100%),(255 255 255 / 100%)); */
+  background: rgba(255, 255, 255, 0.854);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right{
+  width: 30%;
+  /* border: 2px solid yellow; */
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.right::after{
+  content: '';
+  width: 2%;
+  height: 100%;
+  display: block;
+}
+
+.side{
+  width: 60x;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background:rgb(255 255 255 / 98%);
+  top: 10%;
+
+}
+
+.side div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.side div:hover{
+  color: rgb(214, 74, 74);
+  cursor: pointer;
+  
+}
+
+.side::after{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 70px;
+}
+
+.side div:first-child{
+  color: red;
+}
+
+input{
+  padding: 10px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: gray;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+
+/* making responsive navbar items */
+@media (max-width:361px){
+  html{
+    font-size: 25%;
+  }
+  .navbar>.left{
+    width: 90%;
+
+  }
+  .navbar .right{
+    width: 20%;
+  }
+  .search-bar>input,.search-bar{
+    height: 20px;
+  }
+}
+
+/* making responsive card items */
+@media (max-width:361px){
+  html{
+    font-size: 25%;
+  }
+  a,li,p{
+    font-size: 2rem;
+  }
+  .card-title{
+    bottom: 25%;
+  }
+
+  .container{
+    top: 13%;
+    left: 13%;
+  }
+  button{
+    width: 80%;
+  }
+
+  .navbar{
+    width: 360px;
+  }
+ 
+  
+}
